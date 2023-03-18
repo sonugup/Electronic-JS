@@ -1,0 +1,23 @@
+{
+  "name": "electronic-js",
+  "version": "1.0.0",
+  "description": "electron js like javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonugup/Electronic-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonugup/Electronic-JS/issues"
+  },
+  "homepage": "https://github.com/sonugup/Electronic-JS#readme",
+  "devDependencies": {
+    "electron": "^23.1.4"
+  }
+}
