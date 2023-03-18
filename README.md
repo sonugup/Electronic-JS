@@ -6,3 +6,5 @@
 
 electron js like javascript
 
+
+install electron.js
