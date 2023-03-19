@@ -4,7 +4,7 @@ function cWindow() {
     const win= new BrowserWindow({
         width:800,
         height:700,
-        // frame:false,
+        
         webPreferences:{
             nodeIntegration:true
         }
