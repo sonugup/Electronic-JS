@@ -1,15 +1,15 @@
-const {app, BrowserWindow, Menu} = require("electron");
+const { app, BrowserWindow, Menu } = require("electron");
 
 function cWindow() {
-    const win= new BrowserWindow({
-        width:800,
-        height:700,
-        webPreferences:{
-            nodeIntegration:true
-        }
-    })
-    win.loadFile("index.html")
-    win.webContents.openDevTools()
+  const win = new BrowserWindow({
+    width: 800,
+    height: 700,
+    webPreferences: {
+      nodeIntegration: true,
+    },
+  });
+  win.loadFile("index.html");
+  win.webContents.openDevTools();
 }
 
-app.whenReady().then(cWindow)
+app.whenReady().then(cWindow);

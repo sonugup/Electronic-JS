@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electron Js</title>
-  </head>
-  <style>
+</head>
+<style>
     body {
-      background-color: teal;
-      margin: 0;
-      padding: 0;
+        background-color: teal;
+        margin: 0;
+        padding: 0;
     }
 
     .box {
-      background-color: none;
-      width: 70%;
-      color: white;
-      margin: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: none;
+        width: 70%;
+        color: white;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding: 10px;
     }
-    .div{
+
+    .div {
         display: flex;
         margin: auto;
         padding: 10px;
     }
-    .box div{
+
+    .box div {
         padding: 10px;
     }
-    #contact{
+
+    #contact {
         margin: auto;
         width: 60%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding: 10px;
     }
-    h1{
+
+    h1 {
         text-shadow: 0 3px 4px black;
     }
-  </style>
+</style>
 
-  <body>
+<body>
     <div class="box">
-      <div>
-        <marquee behavior="" direction=""> <h1>Hi My Name is Sonu Gupta</h1></marquee>
-       
-        <h3>About me</h3>
-        <i>
-            <h1>Hii...</h1>
-          </i>
-        <div class="div">
-          <p>
-            
-            I am Sonu Gupta, A passionate aspiring Full Stack Developer skilled
-            in MERN Stack & building my logic on Data Structure & Algorithms as
-            well as developing problem-solving, collaboration and teamwork
-            skills, moulded and shaped by Masai school's intensive and immersive
-            learning. Look forward to joining a company where I will be able to
-            contribute to my and the company's growth and progress
-          </p>
-          <img
-            style="border-radius: 50%; width: 35%;"
-            src="https://avatars.githubusercontent.com/u/101567095?v=4"
-            alt="sonu"
-          />
+        <div>
+            <marquee behavior="" direction="">
+                <h1>Hi My Name is Sonu Gupta</h1>
+            </marquee>
+
+            <h3>About me</h3>
+            <i>
+                <h1>Hii...</h1>
+            </i>
+            <div class="div">
+                <p>
+
+                    I am Sonu Gupta, A passionate aspiring Full Stack Developer skilled
+                    in MERN Stack & building my logic on Data Structure & Algorithms as
+                    well as developing problem-solving, collaboration and teamwork
+                    skills, moulded and shaped by Masai school's intensive and immersive
+                    learning. Look forward to joining a company where I will be able to
+                    contribute to my and the company's growth and progress
+                </p>
+                <img style="border-radius: 50%; width: 35%;" src="https://avatars.githubusercontent.com/u/101567095?v=4"
+                    alt="sonu" />
+            </div>
         </div>
-      </div>
     </div>
     <div id="contact">
         <h3>Your Detels</h3>
     </div>
-  </body>
+</body>
+
 </html>
 <script>
-  let Data = JSON.parse(localStorage.getItem("signupdata")) || [];
-  Data.forEach((el) => {
-    let div = document.createElement("div");
-    let name = document.createElement("h2");
-    name.innerText = el.name;
-    let email = document.createElement("h3");
-    email.innerText = el.email;
-    let number = document.createElement("h3");
-    number.innerText = el.contact;
-    let password = document.createElement("h3");
-    password.innerText = el.pass;
-    div.append(name, email, number, password);
-    document.getElementById("contact").append(div);
-  });
+    let Data = JSON.parse(localStorage.getItem("signupdata")) || [];
+    Data.forEach((el) => {
+        let div = document.createElement("div");
+        let name = document.createElement("h2");
+        name.innerText = el.name;
+        let email = document.createElement("h3");
+        email.innerText = el.email;
+        let number = document.createElement("h3");
+        number.innerText = el.contact;
+        let password = document.createElement("h3");
+        password.innerText = el.pass;
+        div.append(name, email, number, password);
+        document.getElementById("contact").append(div);
+    });
 </script>
