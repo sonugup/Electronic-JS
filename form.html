@@ -47,8 +47,6 @@ let SignupObj ={
     pass: Password
 
 }
-
-
 if(Name !== "" && Number !== "" && Email !== "" && Password !== ""){
     SignupArr.push(SignupObj);
     localStorage.setItem("signupdata", JSON.stringify(SignupArr));
