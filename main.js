@@ -5,7 +5,7 @@ function cWindow() {
     width: 800,
     height: 700,
     webPreferences: {
-    //   nodeIntegration: true,
+       nodeIntegration: true,
       preload:path.join(__dirname, 'preload.js')
     },
   });
