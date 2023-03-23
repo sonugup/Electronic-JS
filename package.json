@@ -19,5 +19,10 @@
   "homepage": "https://github.com/sonugup/Electronic-JS#readme",
   "devDependencies": {
     "electron": "^23.1.4"
+  },
+  "dependencies": {
+    "electronmon": "^2.0.2",
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
   }
 }
