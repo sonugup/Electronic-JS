@@ -53,18 +53,6 @@ app.on('window-all-closed', () => {
 // const isMac = process.platform === "darwin";
 // const { electron } = require("process");
 // function cWindow() {
-//   const win = new BrowserWindow({
-//     title:'electron.js',
-//     width: isDev? 1000: 800,
-//     height: 700,
-//     webPreferences: {
-//       nodeIntegration: true,
-//       preload: path.join(__dirname, "preload.js"),
-//     },
-//   });
-//   if(isDev){
-//     win.webContents.openDevTools();
-//   }
 
 
 
