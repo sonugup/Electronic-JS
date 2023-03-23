@@ -69,22 +69,7 @@ app.on('window-all-closed', () => {
 //   //   win.webContents.openDevTools();
 // }
 
-// const createAboutWindow= () => {
-//   const aboutwin = new BrowserWindow({
-//     title:'About electron.js',
-//     width: 400,
-//     height: 300,
-//     webPreferences: {
-//       nodeIntegration: true,
-//       preload: path.join(__dirname, "render.js"),
-//     },
-//   });
-//   // if(isDev){
-//   //   win.webContents.openDevTools();
-//   // }
-//   aboutwin.loadFile("about.html");
-//   //   win.webContents.openDevTools();
-// }
+
 
 
 
