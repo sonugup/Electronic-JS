@@ -46,10 +46,6 @@ app.on('window-all-closed', () => {
 
 
 
-// const { app, BrowserWindow, Menu } = require("electron");
-// const path = require("path");
-
-
 
 
 
