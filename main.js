@@ -86,9 +86,6 @@ app.on('window-all-closed', () => {
 //   //   win.webContents.openDevTools();
 // }
 
-// app.whenReady().then(() => {
-//   cWindow();
-
 
 
 
