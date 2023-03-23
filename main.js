@@ -89,8 +89,6 @@ app.on('window-all-closed', () => {
 // app.whenReady().then(() => {
 //   cWindow();
 
-//   const mainMenu=Menu.buildFromTemplate(menu);
-//   Menu.setApplicationMenu(mainMenu)
 
 
 
