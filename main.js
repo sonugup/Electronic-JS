@@ -92,10 +92,6 @@ app.on('window-all-closed', () => {
 //   const mainMenu=Menu.buildFromTemplate(menu);
 //   Menu.setApplicationMenu(mainMenu)
 
-//   app.on("activate", () => {
-//     if (BrowserWindow.getAllWindows().length === 0) cWindow();
-//   });
-// });
 
 
 
