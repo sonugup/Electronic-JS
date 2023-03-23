@@ -121,6 +121,4 @@ app.on('window-all-closed', () => {
 //   }]:[])
 // ]
 
-// app.on("window-all-closed", () => {
-//   if (isMac) app.quit();
-// });
+
