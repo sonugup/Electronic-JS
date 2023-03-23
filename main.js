@@ -97,28 +97,6 @@ app.on('window-all-closed', () => {
 //   });
 // });
 
-// const menu =[
-//   ...(isMac ? [{
-//     label:app.name,
-//     submenu:[
-//       {
-//         label:'About',
-//         click:createAboutWindow
-//       }
-//     ]
-//   }]:[] ),
-//   {
-//    role:'fileMenu',
-//   },
-//   ...(isMac ? [{
-//     label:'Help',
-//     submenu: [
-//       {
-//         label:'About',
-//         click:createAboutWindow
-//       }
-//     ]
-//   }]:[])
-// ]
+
 
 
