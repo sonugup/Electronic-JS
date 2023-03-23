@@ -1,5 +1,4 @@
-// window.addEventListener('DOMContentLoad', () => {
-//    
+  
 
 
 
