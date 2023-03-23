@@ -49,10 +49,6 @@ app.on('window-all-closed', () => {
 // const { app, BrowserWindow, Menu } = require("electron");
 // const path = require("path");
 
-// const isDev=process.env.NODE_ENV !== "development";
-// const isMac = process.platform === "darwin";
-// const { electron } = require("process");
-// function cWindow() {
 
 
 
