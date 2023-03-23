@@ -65,9 +65,7 @@ app.on('window-all-closed', () => {
 //   if(isDev){
 //     win.webContents.openDevTools();
 //   }
-//   win.loadFile("index.html");
-//   //   win.webContents.openDevTools();
-// }
+
 
 
 
