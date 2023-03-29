@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer App</title>
+</head>
+<body>
+    <h1>Hi Govind Kaise Ho Kya Kar Rhe Ho Meri Yaad Nahi Ati</h1>
+
+    <h2> Digital Clock With Electron Js</h2>
+
+
+    <div>
+        <span id="hour"></span>: <samp id="minte"></samp>
+    </div>
+
+</body>
+</html>
+<script>
+
+    let h=document.getElementById("hour");
+    let m=document.getElementById("minute");
+
+    let data = new Data();
+
+    h.innerHTML=data.getHours();
+    m.innerHTML= data.getMinutes();
+
+</script>
