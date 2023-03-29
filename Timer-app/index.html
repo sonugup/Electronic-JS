@@ -12,15 +12,16 @@
             src: url(DS-DIGIT.TTF);
             font-weight: bolder;
         }
-        body{
+
+        body {
             background-color: yellow;
             color: teal;
             font-family: sans-serif;
             text-align: center;
         }
 
-        #time{
-            padding: 10px ;
+        #time {
+            padding: 10px;
             background-color: brown;
             font-size: 60px;
             border-radius: 10px;
@@ -29,12 +30,14 @@
             font-family: digitalFont;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        .head{
+
+        .head {
             display: flex;
             justify-content: space-around;
 
         }
-        .head img{
+
+        .head img {
             width: 200px;
             border-radius: 5px;
         }
@@ -43,8 +46,10 @@
 
 <body>
 
-    <div class="head"><img src="https://www.iwcnetwork.com/assets/frontend/img/large_logo.png" alt=""> <h3>Created By Sonu Gupta</h3></div>
-  
+    <div class="head"><img src="https://www.iwcnetwork.com/assets/frontend/img/large_logo.png" alt="">
+        <h3>Created By Sonu Gupta</h3>
+    </div>
+
     <h2> Digital Clock Useed Electron Js</h2>
 
     <div id="time">
@@ -55,14 +60,14 @@
 
         let hour = document.getElementById("hour");
         let minte = document.getElementById("minte");
-        let sec=document.getElementById("sec")
-    
+        let sec = document.getElementById("sec")
+
         let data = new Date();
-    
+
         hour.innerHTML = data.getHours();
         minte.innerHTML = data.getMinutes();
-        sec.innerHTML=data.getSeconds();
-   
+        sec.innerHTML = data.getSeconds();
+
     </script>
 </body>
 </html>
