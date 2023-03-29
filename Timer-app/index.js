@@ -1,5 +1,4 @@
 const {app,BrowserWindow }=require("electron")
-
 const path=require("electron")
 
 function createWindow () {
