@@ -7,30 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer App</title>
     <style>
+        @font-face {
+            font-family: dgitalFont;
+            src: url(DS-DIGIT.TTF);
+            font-weight: bolder;
+        }
+        body{
+            background-color: yellow;
+            color: teal;
+            font-family: sans-serif;
+            text-align: center;
+        }
 
+        #time{
+            padding: 10px ;
+            background-color: brown;
+            font-size: 60px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            font-family: digitalFont;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .head{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .head img{
+            width: 200px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
+
+    <div class="head"><img src="https://www.iwcnetwork.com/assets/frontend/img/large_logo.png" alt=""> <h3>Create By Sonu Gupta</h3></div>
     <h1>Hi Sonu Kaise Ho </h1>
 
-    <h2> Digital Clock With Electron Js</h2>
+    <h2> Digital Clock Useed Electron Js</h2>
 
     <div id="time">
-        <span id="hour"></span>: <samp id="minte"></samp>
-    </div>
+        <span id="hour"></span>: <samp id="minte"></samp>: <samp id="sec"></samp>
 
+    </div>
+    <script>
+
+        let hour = document.getElementById("hour");
+        let minte = document.getElementById("minte");
+        let sec=document.getElementById("sec")
+    
+        let data = new Date();
+    
+        hour.innerHTML = data.getHours();
+        minte.innerHTML = data.getMinutes();
+        sec.innerHTML=data.getSeconds();
+    //    document.getElementById("time").append(hour, minte)
+    </script>
 </body>
 
 </html>
-<script>
-
-    let h = document.getElementById("hour");
-    let m = document.getElementById("minte");
-
-    let data = new Data();
-
-    h.innerHTML = data.getHours();
-    m.innerHTML = data.getMinutes();
-
-</script>
