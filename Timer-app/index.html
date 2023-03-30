@@ -57,17 +57,34 @@
 
     </div>
     <script>
-
-        let hour = document.getElementById("hour");
-        let minte = document.getElementById("minte");
-        let sec = document.getElementById("sec")
-
+        function time() {
+            let hours = document.getElementById("hour");
+        let mint = document.getElementById("minte");
+        let second = document.getElementById("sec")
+        if(hours>12){
+        hours=hours-12;
+    }
+    if(hours===0){
+        hours=12;
+    }
+    if(hours<12){
+        hours="0"+hours;
+    }
+    if(mint<10){
+        mint='0'+mint
+    }
+    if(second<10){
+        second='0'+second;
+    }
         let data = new Date();
 
         hour.innerHTML = data.getHours();
         minte.innerHTML = data.getMinutes();
         sec.innerHTML = data.getSeconds();
-
+        }
+        time()
+        setInterval(time, 1000)
     </script>
 </body>
+<!-- <script src="index.js"></script> -->
 </html>
