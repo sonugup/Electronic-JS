@@ -12,9 +12,10 @@ function stopWatch () {
         }
     })
 
-    win.loadFile("index.html")
+    // win.loadFile("index.html")
+    win.loadFile("camera.html")
 
-    // win.webContents.openDevTools()
+    win.webContents.openDevTools()
     win.on('closed', () => {
         win=null;
     })

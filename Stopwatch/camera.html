@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Take Screenshot</button>
+    <img src="https://yt3.ggpht.com/m1uSiMOzvvXZgQ-xAAg46aedC43w6WDLvEZquxc5E3KqmL9vpNCp1EgsQSHDKNlQFlBPdUHsmdM=s88-c-k-c0x00ffffff-no-rj-mo" id="frame" alt="">
+    <canvas id="shot"></canvas>
+</body>
+</html>
+
+<script type="text/javascript">
+const a=navigator.mediaDevices.getDisplayMedia;
+
+const tekeScreenShot = async() => {
+    const stream=await navigator.mediaDevices.getDisplayMedia({
+        video: {mediaSource:"screen"}
+    });
+
+    const track = stream.getVideoTracks()[0];
+
+    const img=new ImageCapture(track);
+
+    const bitmap = await image.grabFrame();
+
+    track.stop();
+
+    const canvas= document.getElementById("shot");
+
+    canvas.width=bitmap.width;
+
+    canvas.height = bitmap.height;
+
+    const context= canvas.getContext('2d');
+
+    context.drawImage(bitmap, 0, 0, 790, bitmap.height/2);
+
+    const url=canvas.toDataURL();
+
+    const res = await fetch(url);
+
+    const buff = await res.arrayBuffer();
+
+    const file = [
+        new File([buff], `photo_${new Data()}.jpg`, {
+            type:"img/jpeg"
+        } )
+    ]
+
+    return fill;
+    console.log(fill)
+}
+
+const button = document.getElementById("btn").onclick = () => a ? tekeScreenShot() : {};
+
+</script>
