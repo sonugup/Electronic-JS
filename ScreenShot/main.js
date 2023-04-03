@@ -4,7 +4,8 @@ const path=require("path");
 let mainWindow = null;
 
 function createWindow() {
-    mainWindow=new BrowserWindow({
+    mainWindow=new BrowserWindow
+    ({
         title:"screenShot",
         width:900,
         height:600,
