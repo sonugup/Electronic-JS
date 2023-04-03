@@ -9,6 +9,6 @@ btn.addEventListener("click", () => {
         a.setAttribute('href', url);
         a.click();
     });
-})
+});
 
 
