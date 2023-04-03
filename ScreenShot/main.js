@@ -7,7 +7,7 @@ function createWindow() {
     mainWindow=new BrowserWindow
     ({
         title:"screenShot",
-        width:900,
+        width:800,
         height:600,
         backgroundColor:"aqua",
         webPreferences:{
