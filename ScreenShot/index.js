@@ -8,7 +8,7 @@ btn.addEventListener("click", () => {
         a.setAttribute('download', 'imageName.png');
         a.setAttribute('href', url);
         a.click();
-    })
+    });
 })
 
 
