@@ -1,14 +1,14 @@
-const { ipcRenderer } = require("electron");
+const btn=document.getElementById("btn");
 
-window.addEventListener("DOMContentLoaded", () => {
-    console.log("loaded");
-
-    document.getElementById("btn").addEventListener("Click", () => {
-        ipcRenderer.send("screenshot:capture", {});
-
-    });
-
-    ipcRenderer.on('screenshot:captured', (e, imageData) => {
-        document.getElementById("placeholder").src=imageData;
+btn.addEventListener("click", () => {
+    html2canvas(document.body)
+    .then(canvas => {
+        const url=canvas.toDataURL('image/png');
+        const a=document.createElement('a');
+        a.setAttribute('download', 'imageName.png');
+        a.setAttribute('href', url);
+        a.click();
     })
 })
+
+

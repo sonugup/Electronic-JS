@@ -9,6 +9,7 @@ function createWindow() {
         title:"screenShot",
         width:900,
         height:600,
+        backgroundColor:"aqua",
         webPreferences:{
             nodeIntegration:true,
             preload:path.join(__dirname, "index.js"),
