@@ -1,5 +1,4 @@
 const {app, BrowserWindow, desktopCapturer, ipcMain}=require("electron");
-
 const path=require("path");
 
 let mainWindow = null;
