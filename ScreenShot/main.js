@@ -16,6 +16,7 @@ function createWindow() {
             preload:path.join(__dirname, "index.js"),
         }
     })
+    
     mainWindow.loadFile(path.join(__dirname, "index.html"));
     
     win.webContents.openDevTools()
