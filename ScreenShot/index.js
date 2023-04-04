@@ -9,7 +9,6 @@ btn.addEventListener("click", () => {
         a.setAttribute('download', `imageName.png${Math.floor(Math.random()*10)}`);
         a.setAttribute('href', url);
 
-        
               setInterval(() => {
                 a.click();
             }, 10000);
