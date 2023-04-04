@@ -10,8 +10,7 @@ btn.addEventListener("click", () => {
         a.setAttribute('href', url);
               setInterval(() => {
                 a.click();
-            }, 10000);
-                          
+            }, 10000);                        
     });
 });
 
