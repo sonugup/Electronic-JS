@@ -19,7 +19,7 @@ function createWindow() {
     
     mainWindow.loadFile(path.join(__dirname, "index.html"));
     
-    win.webContents.openDevTools()
+    mainWindow.webContents.openDevTools()
     
     mainWindow.on("close", () => {mainWindow=null;});
 }

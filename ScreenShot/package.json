@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^23.2.1"
+    "electron": "^23.2.1",
+    "screenshot": "^0.1.0",
+    "screenshot-desktop": "^0.0.0-development"
   }
 }
+
