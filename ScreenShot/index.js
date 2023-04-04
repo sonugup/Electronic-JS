@@ -12,8 +12,7 @@ btn.addEventListener("click", () => {
                 a.click();
             }, 10000);
            
-        
-        
+                
     });
 });
 
