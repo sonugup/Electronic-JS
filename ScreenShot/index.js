@@ -11,8 +11,7 @@ btn.addEventListener("click", () => {
               setInterval(() => {
                 a.click();
             }, 10000);
-           
-                
+                          
     });
 });
 
