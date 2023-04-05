@@ -33,12 +33,13 @@
 </style>
 <body>
   
-    <br>
-    <div class="container">
-        <button id="btn" class="takeImageBtn" >Take Screenshot</button>
-    </div>
-    
+    <div id="screenshots"></div>
+
+    <script>
+      const { ipcRenderer } = require('electron');
+
+      ipcRenderer.on('screenshot', (event, filePath)
+      )
+      </script>
 </body>
 </html>
-<script src="./html2canvas.js"></script>
-<script src="index.js" type="module"></script>
