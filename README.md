@@ -6,4 +6,16 @@ I am started a new Lauguage.
 
 today  Made Screenshot website use electron.js
 
-oo 
+const screenshot = require('screenshot-desktop')
+const fs = require('fs')
+
+screenshot().then((img) => {
+  fs.writeFile('out.jpg', img, function (err) {
+    if (err) {
+      throw err
+    }
+    console.log('written to out.jpg')
+  })
+}).catch((err) => {
+  throw err
+})
