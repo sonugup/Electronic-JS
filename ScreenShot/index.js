@@ -1,5 +1,3 @@
-
-
 const btn=document.getElementById("btn");
 
 
@@ -10,14 +8,9 @@ btn.addEventListener("click", () => {
         const a=document.createElement('a');
         a.setAttribute('download', `imageName.png${Math.floor(Math.random()*10)}`);
         a.setAttribute('href', url);
-
-        
-              setInterval(() => {
+            setInterval(() => {
                 a.click();
-            }, 10000);
-           
-        
-        
+            }, 10000);                        
     });
 });
 
