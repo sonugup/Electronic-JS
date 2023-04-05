@@ -6,7 +6,7 @@ I am started a new Lauguage.
 
 today  Made Screenshot website use electron.js
 
-const screenshot = require('screenshot-desktop')
+`const screenshot = require('screenshot-desktop')
 const fs = require('fs')
 
 screenshot().then((img) => {
@@ -18,4 +18,4 @@ screenshot().then((img) => {
   })
 }).catch((err) => {
   throw err
-})
+})`
