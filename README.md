@@ -12,6 +12,7 @@ const fs = require('fs')
 
 
 
+
 screenshot().then((img) => {
 
   fs.writeFile('out.jpg', img, function (err) {
