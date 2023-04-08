@@ -26,3 +26,4 @@ screenshot().then((img) => {
 }).catch((err) => {
   throw err
 })`
+
