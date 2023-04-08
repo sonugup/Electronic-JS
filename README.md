@@ -11,6 +11,7 @@ today  Made Screenshot website use electron.js
 const fs = require('fs')
 
 
+
 screenshot().then((img) => {
 
   fs.writeFile('out.jpg', img, function (err) {
