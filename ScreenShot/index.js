@@ -1,6 +1,5 @@
 const btn=document.getElementById("btn");
 
-
 btn.addEventListener("click", () => {
     html2canvas(document.body)
     .then(canvas => {
